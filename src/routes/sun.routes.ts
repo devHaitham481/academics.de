@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { getSunHours } from '../controllers/sun.controller';
+import { getSunHours } from '@controllers/sun.controller';
 
 const router = Router();
 

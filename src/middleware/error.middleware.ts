@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { AppError } from '../types';
+import { AppError } from '@types';
 
 export function createError(message: string, statusCode: number): AppError {
   const error = new Error(message) as AppError;

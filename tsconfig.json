@@ -5,6 +5,17 @@
     "lib": ["ES2020"],
     "outDir": "./dist",
     "rootDir": "./src",
+    "baseUrl": "./src",
+    "paths": {
+      "@types": ["types/index.ts"],
+      "@config": ["config.ts"],
+      "@app": ["app.ts"],
+      "@middleware/*": ["middleware/*"],
+      "@clients/*": ["clients/*"],
+      "@services/*": ["services/*"],
+      "@controllers/*": ["controllers/*"],
+      "@routes/*": ["routes/*"]
+    },
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,

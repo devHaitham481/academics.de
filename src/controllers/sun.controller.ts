@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import { z } from 'zod';
-import { getSunHoursForCity } from '../services/sun.service';
-import { createError } from '../middleware/error.middleware';
+import { getSunHoursForCity } from '@services/sun.service';
+import { createError } from '@middleware/error.middleware';
 
 const querySchema = z.object({
   city: z.string().min(1, 'city must not be empty'),

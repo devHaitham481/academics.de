@@ -1,7 +1,7 @@
-import { geocodeCity } from '../clients/geocoding.client';
-import { fetchSunshineDuration } from '../clients/openmeteo.client';
-import { SunHoursResult } from '../types';
-import { config } from '../config';
+import { geocodeCity } from '@clients/geocoding.client';
+import { fetchSunshineDuration } from '@clients/openmeteo.client';
+import { SunHoursResult } from '@types';
+import { config } from '@config';
 
 function buildComment(city: string, sunHours: number): string {
   const avg = config.germanAverageSunHours;

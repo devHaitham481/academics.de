@@ -1,5 +1,5 @@
-import { GeocodingResult } from '../types';
-import { createError } from '../middleware/error.middleware';
+import { GeocodingResult } from '@types';
+import { createError } from '@middleware/error.middleware';
 
 const BASE_URL = 'https://geocoding-api.open-meteo.com/v1/search';
 

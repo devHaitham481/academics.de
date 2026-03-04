@@ -1,4 +1,4 @@
-import { createError } from '../middleware/error.middleware';
+import { createError } from '@middleware/error.middleware';
 
 const BASE_URL = 'https://archive-api.open-meteo.com/v1/archive';
 
