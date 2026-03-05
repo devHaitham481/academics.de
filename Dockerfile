@@ -1,4 +1,4 @@
-# --- build stage ---
+# build stage --
 FROM node:20-alpine AS builder
 
 WORKDIR /app
@@ -9,7 +9,7 @@ RUN npm ci
 COPY src ./src
 RUN npm run build
 
-# --- production stage ---
+# production stage --
 FROM node:20-alpine AS production
 
 WORKDIR /app
