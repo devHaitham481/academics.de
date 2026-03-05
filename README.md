@@ -45,7 +45,7 @@ GET /sun-hours?city=Berlin
 
 ## If I had more time
 
-- **Structured logging** — replace `console.log` with Winston + a correlation ID per request (makes debugging at 3 AM possible)
+- **Structured logging** — replace `console.log` with Winston + a correlation ID per request will make debugging easier.
 - **Caching** — geocoding results and yearly sun data are stable; a short-lived in-memory cache or Redis would cut Open-Meteo calls significantly
 - **Rate limiting** — per-IP limiting on the endpoint to prevent abuse
 - **Input sanitization** — dis-allow non-printable characters and enforce a max length on the `city` param
